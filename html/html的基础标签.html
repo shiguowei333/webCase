@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="name" content="sakura3">
+    <title>html的基础标签</title>
+</head>
+<body>
+    <!-- 排版标签 -->
+    <h1>这是h1标签</h1>
+    <h2>这是h2标签</h2>
+    <h3>这是h3标签</h3>
+    <h4>这是h4标签</h4>
+    <h5>这是h5标签</h5>
+    <h6>这是h6标签</h6>
+    <p>这是段落标签</p>
+    <div>这是div标签</div>
+
+    <!-- 文本标签 -->
+    <hr>
+    <span>这是span标签</span>
+    <em>这是em标签,语义为着重阅读</em>
+    <strong>这是strong标签，语义为十分重要的内容</strong>
+    <hr>
+
+    <!-- 图片标签 -->
+    <img src="../images/test.jpg" alt="kun" style="width: 50px;height: 50px;">
+
+    <!-- 超链接 -->
+    <a href="../images/test.jpg">跳转到kun图</a>
+
+    <!-- 浏览器能直接打开的文件 -->
+    <a href="./resource/自拍.jpg">看自拍</a>
+    <a href="./resource/小电影.mp4">看小电影</a>
+    <a href="./resource/小姐姐.gif">看小姐姐</a>
+    <a href="./resource/如何一夜暴富.pdf">点我一夜暴富</a>
+
+    <!-- 浏览器不能打开的文件，会自动触发下载 -->
+    <a href="./resource/内部资源.zip">内部资源</a>
+
+    <!-- 强制触发下载 -->
+    <a href="./resource/小电影.mp4" download="电影片段.mp4">下载电影</a>
+
+    <!-- 第一种方式：a标签配合name属性 -->
+    <a name="test1"></a>
+    <!-- 第二种方式：其他标签配合id属性 -->
+    <h2 id="test2">我是一个位置</h2>
+    <!-- 跳转到test1锚点-->
+    <a href="#test1">去test1锚点</a>
+    <!-- 跳到本页面顶部 -->
+    <a href="#">回到顶部</a>
+    <!-- 跳转到其他页面锚点 -->
+    <a href="demo.html#test1">去demo.html页面的test1锚点</a>
+    <!-- 刷新本页面 -->
+    <a href="">刷新本页面</a>
+    <!-- 执行一段js,如果还不知道执行什么，可以留空，javascript:; -->
+    <a href="javascript:void(0);">返回首页</a>
+
+    <!-- 唤起设备拨号 -->
+    <a href="tel:10010">电话联系</a>
+    <!-- 唤起设备发送邮件 -->
+    <a href="mailto:10010@qq.com">邮件联系</a>
+    <!-- 唤起设备发送短信 -->
+    <a href="sms:10086">短信联系</a>
+
+    <!-- 列表标签 -->
+    <!-- 有序列表ol -->
+    <h2>要把大象放冰箱总共分几步</h2>
+    <ol>
+        <li>把冰箱门打开</li>
+        <li>把大象放进去</li>
+        <li>把冰箱门关上</li>
+    </ol>
+    <!-- 无序列表ul -->
+    <h2>我想去的几个城市</h2>
+    <ul>
+        <li>成都</li>
+        <li>上海</li>
+        <li>西安</li>
+        <li>武汉</li>
+    </ul>
+    <!-- 自定义列表 -->
+    <h2>如何高效的学习？</h2>
+        <dl>
+            <dt>做好笔记</dt>
+                <dd>笔记是我们以后复习的一个抓手</dd>
+                <dd>笔记可以是电子版，也可以是纸质版</dd>
+            <dt>多加练习</dt>
+                <dd>只有敲出来的代码，才是自己的</dd>
+            <dt>别怕出错</dt>
+                <dd>错很正常，改正后并记住，就是经验</dd>
+        </dl>
+    <!-- 表格table -->
+    <table border="1px">
+       <caption>学生信息表</caption>
+       <thead>
+           <tr>
+               <th>姓名</th>
+               <th>性别</th>
+               <th>年龄</th>
+               <th>民族</th>
+               <th>政治面貌</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr>
+               <td>张三</td>
+               <td>男</td>
+               <td>18</td>
+               <td>汉族</td>
+               <td>团员</td>
+           </tr>
+           <tr>
+               <td>李四</td>
+               <td>女</td>
+               <td>20</td>
+               <td>满族</td>
+               <td>群众</td>
+           </tr>
+       </tbody>
+       <tfoot>
+           <tr>
+               <td>合</td>
+               <td>乎</td>
+               <td>粥</td>
+               <td>礼</td>
+               <td></td>
+           </tr>
+       </tfoot>
+    </table>
+
+    <hr>
+    <!-- 表单控件 -->
+    <form action="#" method="get">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <input type="password" name="password" placeholder="请输入密码">
+        <input type="radio" name="gender" value="1" checked>男
+        <input type="radio" name="gender" value="0">女
+        <input type="checkbox" name="hobby" value="smoke">抽烟
+        <input type="checkbox" name="hobby" value="drink">喝酒
+        <input type="checkbox" name="hobby" value="perm" checked>烫头
+        <input type="hidden" name="tag" value="tag">
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+        <input type="button" value="按钮">
+        <textarea name="text"></textarea>
+        <select name="from">
+            <option value="黑">黑龙江</option>
+            <option value="辽">辽宁</option>
+            <option value="吉">吉林</option>
+            <option value="粤" selected>广东</option>
+        </select>
+    </form>
+</body>
+</html>
