@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画效果案例</title>
+    <style>
+        .img {
+            width: 130px;
+            height: 130px;
+            margin: 200px auto;
+            background-image: url('../images/bike.png');
+            animation: cycle 1s steps(31) infinite;
+        }
+
+        @keyframes cycle {
+            from {
+
+            }
+            to{
+                background-position: 0 -4030px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="img"></div>
+</body>
+</html>
