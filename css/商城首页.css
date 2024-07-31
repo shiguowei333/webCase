@@ -49,3 +49,32 @@
     border-right: none;
 }
 /* 头部导航栏end */
+/* 网站头图+右侧搜索栏start */
+.search-wrap {
+    height: 120px;
+}
+.search-right {
+    height: 36px;
+    margin-top: 42px;
+    font-size: 0;
+}
+.search-right input {
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 36px;
+    width: 510px;
+    border: 1px solid #DD302D;
+    vertical-align: bottom;
+}
+.search-right button {
+    width: 80px;
+    height: 36px;
+    vertical-align: bottom;
+    background-color: #DD302D;
+}
+
+.search-right button img{
+    margin: auto;;
+}
+
+/* 网站头图+右侧搜索栏start */
