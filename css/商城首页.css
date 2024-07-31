@@ -12,12 +12,12 @@
 .float-right {
     float: right;
 }
-
+/* 版心全局配置 */
 .container {
     width: 1190px;
     margin: 0 auto;
 }
-
+/* 头部导航栏start */
 .top-wrap {
     height: 30px;
     font-size: 12px;
@@ -48,3 +48,4 @@
     padding-right: 0;
     border-right: none;
 }
+/* 头部导航栏end */
