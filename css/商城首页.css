@@ -63,6 +63,7 @@
     box-sizing: border-box;
     height: 36px;
     width: 510px;
+    padding-left: 1px;
     border: 1px solid #DD302D;
     vertical-align: bottom;
 }
