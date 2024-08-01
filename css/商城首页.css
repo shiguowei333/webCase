@@ -1,5 +1,5 @@
 /* 清除浮动 */
-.clear-float {
+.clear-float::after {
     content: '';
     display: block;
     clear: both;    
@@ -16,6 +16,7 @@
 .container {
     width: 1190px;
     margin: 0 auto;
+    font-size: 16px;
 }
 /* 头部导航栏start */
 .top-wrap {
@@ -78,4 +79,37 @@
     margin: auto;;
 }
 
-/* 网站头图+右侧搜索栏start */
+/* 网站头图+右侧搜索栏end */
+
+/* 导航栏start */
+.left-nav {
+    width: 190px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    background-color: #DD302D;
+    color: #FFFFFF;
+}
+
+.right-nav {
+    margin-top: 13px;
+}
+
+.right-nav li {
+    margin-left: 20px;
+}
+
+.right-nav li:first-child {
+    margin-left: 10px;
+}
+
+.right-nav li a {
+    width: 64px;
+    height: 23px;
+    color: #333;
+    font-weight: 500;
+}
+/* 导航栏end */
+.line {
+    border-top: 1px solid red;
+}
