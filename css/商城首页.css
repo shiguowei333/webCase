@@ -112,4 +112,53 @@
 /* 导航栏end */
 .line {
     border-top: 1px solid red;
+    margin-bottom: 10px;
 }
+
+/* 中心导航区域start */
+.center-nav {
+    height: 458px;
+    margin-bottom: 10px;
+}
+
+.center-nav .options {
+    height: 458px;
+    width: 190px;
+    background-color: #F4F4F4;
+    position: relative;
+    padding-top: 10px;
+}
+
+.center-nav .silder {
+    margin: 0 10px;
+}
+
+.center-nav .options ul li {
+    height: 28px;
+    margin-left: 16px;
+    font-size: 14px;
+}
+
+.center-nav .options ul li a {
+    color: #333;
+    font-weight: 500;
+}
+
+.center-nav .options ul li a:hover {
+    color: red;
+}
+
+.center-nav .options ul li div {
+    width: 700px;
+    height: 458px;
+    position: absolute;
+    background-color: pink;
+    top: 0;
+    left: 190px;
+    display: none;
+}
+
+.center-nav .options ul li:hover div{
+    display: block;
+}
+/* 中心导航区域end */
