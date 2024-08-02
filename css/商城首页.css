@@ -137,22 +137,19 @@
     height: 28px;
     margin-left: 16px;
     font-size: 14px;
+    line-height: 28px;
 }
 
-.center-nav .options ul li a {
+.center-nav .options ul li>a {
     color: #333;
-    font-weight: 500;
-}
-
-.center-nav .options ul li a:hover {
-    color: red;
+    font-weight: 700;
 }
 
 .center-nav .options ul li div {
     width: 700px;
     height: 458px;
     position: absolute;
-    background-color: pink;
+    background-color: white;
     top: 0;
     left: 190px;
     display: none;
@@ -160,5 +157,35 @@
 
 .center-nav .options ul li:hover div{
     display: block;
+}
+
+.center-nav .options ul li:hover {
+    background-color: #DD302D;
+}
+
+.center-nav .options ul li dt {
+    width: 70px;
+    height: 20px;
+    font-size: 500;
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.center-nav .options ul li dt a {
+    color: #000;
+}
+
+.center-nav .options ul li dd {
+    height: 20px;
+    padding: 0 10px;
+    font-size: 14px;
+    border-left: 1px solid #666;
+    float: left;
+}
+
+.center-nav .options ul dl {
+    margin-top: 16px;
 }
 /* 中心导航区域end */
