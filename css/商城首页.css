@@ -123,6 +123,7 @@
 }
 
 .center-nav .options {
+    box-sizing: border-box;
     height: 458px;
     width: 190px;
     background-color: #F4F4F4;
@@ -300,3 +301,12 @@
     font-weight: 700;
 }
 /* 中心导航区域end */
+/* 秒杀导航区域end */
+.miaosha-banner img {
+    margin-right: 10px;
+}
+
+.miaosha-banner img:last-child {
+    margin-right: 0;
+}
+/* 秒杀导航区域end */
