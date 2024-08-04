@@ -301,7 +301,7 @@
     font-weight: 700;
 }
 /* 中心导航区域end */
-/* 秒杀导航区域end */
+/* 秒杀导航区域start */
 .miaosha-banner img {
     margin-right: 10px;
 }
@@ -310,3 +310,125 @@
     margin-right: 0;
 }
 /* 秒杀导航区域end */
+/* 商品展示区域start */
+.shop {
+    margin-top: 48px;
+}
+
+.shop .shop-top {
+    margin-bottom: 6px;
+}
+.shop .shop-top span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.shop-banner {
+    margin-top: 10px;
+}
+
+.shop .shop-top .shop-banner li {
+    padding: 0 10px;
+    border-left: 1px solid #666;
+    height: 16px;
+    line-height: 16px;
+}
+
+.shop .shop-top .shop-banner li:first-child {
+    border-left: none;
+}
+
+.shop .shop-bottom .banner {
+    height: 432px;
+}
+.shop-bottom {
+    border-top: 2px solid #DD302D;
+}
+.shop-bottom .banner1 {
+    width: 230px;
+}
+.shop-bottom .banner1 div {
+    width: 190px;
+    height: 108px;
+    margin: 20px auto 0 auto;
+}
+.shop-bottom .banner1 ul li {
+    text-align: center;
+    width: 90px;
+    float: left;
+    color: #666;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 15px;
+}
+.shop-bottom .banner1 ul li:first-child {
+    margin-right: 10px;
+}
+.shop-bottom .banner1 img {
+    margin: 30px auto 0 auto;
+}
+.shop-bottom .banner3 img {
+    border-bottom: 1px solid #E2E2E2;
+}
+.shop-bottom .banner4 img {
+    border: 1px solid #E2E2E2;
+    border-top: none;
+}
+.shop-bottom .banner5 img {
+    border-bottom: 1px solid #E2E2E2;
+}
+/* 商品展示区域end */
+/* 底部跳转链接区域start */
+.bottom-div {
+    margin-top: 48px;
+    background-color: #483E3E;
+}
+.a-msg {
+    height: 246px;
+    border-bottom: 1px solid #584D4D;
+}
+.bottom-div .bottom-msg .a-msg ul {
+    width: 190px;
+    height: 176px;
+    float: left;
+    margin-top: 48px;
+    margin-right: 10px;
+}
+.bottom-div .bottom-msg .a-msg ul:last-child {
+    margin-right: 0;
+}
+.bottom-div .bottom-msg .a-msg ul li a {
+    color: #FFF;
+    font-size: 14px;
+    line-height: 18px;
+}
+.beian {
+    height: 193px;
+    text-align: center;
+}
+.beian ul {
+    width: 861px;
+    margin: 48px auto 10px auto;
+}
+
+.beian ul li {
+    float: left;
+}
+
+.beian ul li a {
+    font-size: 12px;
+    padding: 0 18px;
+    color: #FFF;
+    border-right: 1px solid #FFF;
+}
+.beian ul li a:hover {
+    color: #DD302D;
+}
+.beian ul li:last-child a {
+    border-right: none;
+}
+.beian span {
+    font-size: 12px;
+    color: #FFF;
+}
+/* 底部跳转链接区域end */
