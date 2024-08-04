@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>渲染柱状图案例</title>
+    <style>
+        .con {
+            width: 800px;
+            height: 500px;
+            margin: 200px auto;
+            border-left: 1px solid red;
+            border-top: 1px solid red;
+        }
+        .con::after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+        .con>div {
+            float: left;
+            margin-left: 100px;
+            position: relative;
+            top: -30px;
+        }
+        .con>div span:first-child {
+            display: block;
+            height: 30px;
+            width: 70px;
+        }
+        .con>div span:last-child {
+            display: block;
+            width: 70px;
+            text-align: center;
+        }
+        .con>div>div {
+            width: 50px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="jidu-1">
+            <span>第一季度</span>
+            <div></div>
+            <span></span>
+        </div>
+        <div class="jidu-2">
+            <span>第二季度</span>
+            <div></div>
+            <span></span>
+        </div>
+        <div class="jidu-3">
+            <span>第三季度</span>
+            <div></div>
+            <span></span>
+        </div>
+        <div class="jidu-4">
+            <span>第四季度</span>
+            <div></div>
+            <span></span>
+        </div>
+    </div>
+    <script src="../js/渲染柱形图案例.js"></script>
+</body>
+</html>
