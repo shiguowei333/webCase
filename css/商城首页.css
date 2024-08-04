@@ -402,6 +402,9 @@
     font-size: 14px;
     line-height: 18px;
 }
+.bottom-div .bottom-msg .a-msg ul li a:hover {
+    color: #DD302D;
+}
 .beian {
     height: 193px;
     text-align: center;
