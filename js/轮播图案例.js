@@ -35,3 +35,12 @@ document.querySelector('.toggle .next').addEventListener('click', () => {
     if (index > sliderData.length - 1) {index = 0}
     appleSlideshow(index)
 })
+
+document.querySelector('.slider-indicator').addEventListener('click', e => {
+    if(e.target.tagName === 'LI'){
+        index = parseInt(e.target.dataset.index) - 1
+        appleSlideshow(index)
+    }
+})
+
+
