@@ -9,14 +9,29 @@ const sliderData = [
     { url: '../images/slider08.jpg', title: '谁不想和小猫咪贴贴呢！', color: 'rgb(99, 72, 114)' },
   ]
 
-let index = 0
-setInterval(() => {
-    index++
-    if(index > sliderData.length - 1) {index = 0}
+function appleSlideshow(index) {
     document.querySelector('.slider-indicator .active').classList.remove('active')
     document.querySelectorAll('.slider-indicator p').innerHTML = sliderData[index].title
     document.querySelector('.slider-wrapper img').src = sliderData[index].url
     document.querySelectorAll('.slider-indicator li')[index].classList.add('active')
     document.querySelector('.slider-footer').style.backgroundColor = sliderData[index].color
+}
 
+let index = 0
+setInterval(() => {
+    index++
+    if(index > sliderData.length - 1) {index = 0}
+    appleSlideshow(index)
 },1500)
+
+document.querySelector('.toggle .prev').addEventListener('click', () => {
+    index--
+    if (index < 0) {index = sliderData.length - 1}
+    appleSlideshow(index)
+})
+
+document.querySelector('.toggle .next').addEventListener('click', () => {
+    index++
+    if (index > sliderData.length - 1) {index = 0}
+    appleSlideshow(index)
+})
