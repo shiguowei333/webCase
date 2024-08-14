@@ -1,4 +1,4 @@
-document.querySelector('.tab-nav ul').addEventListener('click', e => {
+document.querySelector('.tab-nav ul').addEventListener('mouseover', e => {
     if(e.target.tagName === 'A') {
         document.querySelector('.tab-nav ul .active').classList.remove('active')
         e.target.classList.add('active')
