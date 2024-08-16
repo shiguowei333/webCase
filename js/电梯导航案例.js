@@ -1,5 +1,4 @@
 window.addEventListener('scroll', e => {
-    console.log(window.scrollY)
     if(window.scrollY >= 300) {
         document.querySelector('.xtx-elevator').style.opacity = 1
     }else {
@@ -7,7 +6,13 @@ window.addEventListener('scroll', e => {
     }
 })
 
-
+document.querySelector('.xtx-elevator-list').addEventListener('click', e => {
+    if(e.target.tagName = 'A') {
+        if(e.target.id = 'backTop') {
+            window.scrollTo(0,0)
+        }
+    }
+}) 
 
 // window.addEventListener('scroll', e => {
 //     console.log(document.documentElement.scrollTop)
