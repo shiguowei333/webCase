@@ -8,9 +8,13 @@ window.addEventListener('scroll', e => {
 
 document.querySelector('.xtx-elevator-list').addEventListener('click', e => {
     if(e.target.tagName === 'A') {
+        if(document.querySelector('.xtx-elevator a.active')) {
+            document.querySelector('.xtx-elevator a.active').classList.remove('active')
+        }
         if(e.target.id === 'backTop') {
             window.scrollTo(0,0)
         }else {
+            e.target.classList.add('active')
             window.scrollTo(0,document.querySelector(`.xtx_goods_${e.target.dataset.name}`).offsetTop)
         }
     }
