@@ -7,19 +7,11 @@ window.addEventListener('scroll', e => {
 })
 
 document.querySelector('.xtx-elevator-list').addEventListener('click', e => {
-    if(e.target.tagName = 'A') {
-        if(e.target.id = 'backTop') {
+    if(e.target.tagName === 'A') {
+        if(e.target.id === 'backTop') {
             window.scrollTo(0,0)
+        }else {
+            window.scrollTo(0,document.querySelector(`.xtx_goods_${e.target.dataset.name}`).offsetTop)
         }
     }
 }) 
-
-// window.addEventListener('scroll', e => {
-//     console.log(document.documentElement.scrollTop)
-//     if(document.documentElement.scrollTop >= 300) {
-//         console.dir(document.querySelector('.temp'))
-//         document.querySelector('.temp').style.display = 'block'
-//     }else if (document.documentElement.scrollTop < 300) {
-//         document.querySelector('.temp').style.display = 'none'
-//     }
-// })
